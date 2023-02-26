@@ -3,6 +3,9 @@ const { User } = require("../models/User");
 const Joi = require("joi");
 const bcrypt = require("bcrypt")
 
+
+// This is for login of a user with an account
+
 router.post("/", async (req, res) => {
     try{
         const {error } = validate(req.body);
